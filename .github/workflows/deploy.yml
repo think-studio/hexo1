@@ -24,13 +24,13 @@ jobs:
     - run: git submodule update
     - run: rm -fr public/
     - run: |
-        git fetch origin master
-        git worktree add -B master public origin/master
+        git fetch origin pages
+        git worktree add -B pages public origin/pages
     - run: npx hexo generate
     - run: |
         cd public
         git config --global user.name 'ruY9527'
         git config --global user.email 'luohong1001@gmail.com'
         git add .
-        git commit -m "Update master"
+        git commit -m "Update pages"
         git push

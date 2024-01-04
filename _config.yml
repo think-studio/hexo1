@@ -103,4 +103,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/think-studio/hexo1.git
-  branch: master
+  branch: pages
